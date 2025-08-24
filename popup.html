@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Highlights</title>
+		<link rel="stylesheet" href="popup.css" />
+	</head>
+	<body>
+		<header class="hdr">
+			<div class="title">Saved Highlights</div>
+			<div class="actions">
+				<button id="clearBtn" title="Delete all">Clear</button>
+			</div>
+		</header>
+
+		<div id="empty" class="empty hidden">
+			No highlights yet. Select text on any page and click
+			<em>Save highlight?</em>
+		</div>
+
+		<main id="list" class="list" role="list"></main>
+
+		<template id="itemTmpl">
+			<article class="item" role="listitem">
+				<div class="text"></div>
+				<div class="meta">
+					<a class="url" target="_blank" rel="noopener">Open page</a>
+					<span class="dot">•</span>
+					<time class="time"></time>
+					<button class="del" title="Delete">Delete</button>
+				</div>
+			</article>
+		</template>
+
+		<script src="popup.js"></script>
+	</body>
+</html>

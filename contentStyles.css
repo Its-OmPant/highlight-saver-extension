@@ -1,0 +1,52 @@
+#hs-floating-save.hs-pop {
+	position: absolute;
+	z-index: 2147483647;
+	font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+		Arial, "Noto Sans", sans-serif;
+	font-size: 12.5px;
+	font-weight: 600;
+	padding: 8px 10px;
+	border-radius: 999px;
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18), 0 2px 6px rgba(0, 0, 0, 0.12);
+	cursor: pointer;
+	user-select: none;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	backdrop-filter: saturate(160%) blur(6px);
+	-webkit-backdrop-filter: saturate(160%) blur(6px);
+	transition: transform 120ms ease, opacity 120ms ease;
+	opacity: 0.98;
+}
+
+#hs-floating-save.hs-pop:hover {
+	transform: translateY(-1px);
+}
+
+@media (prefers-color-scheme: dark) {
+	#hs-floating-save.hs-pop {
+		background: rgba(32, 32, 36, 0.8);
+		color: #fff;
+		border-color: rgba(255, 255, 255, 0.1);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	#hs-floating-save.hs-pop {
+		background: rgba(255, 255, 255, 0.85);
+		color: #111;
+	}
+}
+
+#hs-toast.hs-toast {
+	position: fixed;
+	left: 50%;
+	bottom: 24px;
+	transform: translateX(-50%);
+	z-index: 2147483647;
+	padding: 10px 14px;
+	border-radius: 12px;
+	font: 600 12.5px system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+		Cantarell, Arial, "Noto Sans", sans-serif;
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18), 0 2px 6px rgba(0, 0, 0, 0.12);
+	background: rgba(24, 160, 88, 0.9);
+	color: #fff;
+}
